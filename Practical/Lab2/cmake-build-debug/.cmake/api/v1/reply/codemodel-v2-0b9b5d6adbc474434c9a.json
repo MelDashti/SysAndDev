@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SADlab",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ex1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex1-Debug-8cfe8a3726c8f8fcefe0.json",
+					"name" : "ex1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex2-Debug-208577e046ba301fba8f.json",
+					"name" : "ex2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex3-Debug-34d9b857478f56e7714a.json",
+					"name" : "ex3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex4-Debug-9c508bdf6b4d0c3fe64b.json",
+					"name" : "ex4",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2/cmake-build-debug",
+		"source" : "C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
