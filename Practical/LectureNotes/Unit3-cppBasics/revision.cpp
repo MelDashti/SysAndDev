@@ -188,7 +188,6 @@ void slide3and4() {
         //Member initialization is a feature in C++ that allows you to initialize member variables of a class or struct directly in the constructor's initialization list rather than within the constructor body.
         my_class2() : code(0) {}
         my_class2(int c) { code = c; }
-
         int get_code() {
             return code;
         }
@@ -201,6 +200,7 @@ void slide3and4() {
 
 
 }
+
 
 
 int main() {

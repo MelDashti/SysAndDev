@@ -4,10 +4,19 @@
 #include <unordered_map>
 #include <deque>
 #include <array>
+#include <algorithm>
+#include <map>
+#include <set>
 
 using namespace std;
 using std::vector;
 using std::list;
+
+int main() {
+
+
+}
+
 
 void sequentialContainers() {
     // Basic data structures Arrays, matrices, lists, stacks, queues, trees,
@@ -16,14 +25,20 @@ void sequentialContainers() {
 
     // In c++ we can use c-like arrays. Arrays can be of data type integer(float), Character, String ( a special type of character array). Pointers are used to access the elements of the array.
     constexpr unsigned N1 = 10;
-    const unsigned N2 = 3; // const is used to declare a constant variable. constexpr is used to declare a constant expression.
+    const unsigned N2 = 3;
+    // the difference between const and constexpr is that const is evaluated at runtime and constexpr is evaluated at compile time.
+    // So does it make a difference if we use const or constexpr? Yes, it does. If we use const, then the value of the variable will be evaluated at runtime.
     int v1[N1]; // v1 is an array of integers of size N1.
+    int v2[] = {1, 2, 3, 4, 5};// don't need to mention the size it will be calculated on its own
+//    int v6[]; // this will raise an error
+    int v3[N1] = {1, 2, 3}; // this will be equal to 1, 2, 3, 0, 0, 0, 0, 0, 0, 0
 
-
-
-    char s2[] = "C--"; //
-
+    char s1[] = {'a', 'b', 'c'};
+    char s2[] = "C--"; // creates a c like string with a null character at the end. so the array contains : C, -, -, \0
     // in c++ multidimensional arrays are also possible. For example, a 2D array is an array of arrays.
+
+    // C-like strings are not a type, they are array of characters, null terminated.
+
 
     constexpr int R = 3;
     constexpr int C = 4;
@@ -48,6 +63,8 @@ void sequentialContainers() {
     // So for example, if we change the value of c, then the value of the element of the array will not be changed.
 
 
+
+
     // VLA (Variable Length Arrays) are not allowed in c++. VLA is a feature of C99 standard. It allows the creation of arrays whose length is determined at runtime.
 
     // Generic type are not allowed in c++. In c++ we can use templates to create generic types.
@@ -61,7 +78,7 @@ void sequentialContainers() {
     // List : Doubly linked list. Bi-directional sequential accesss.
     // Forward list: Singly linked list. Unidirectional sequential access.
     // Dequeue: Double ended queue. Bi-directional sequential access. Fast insertion and deletion at both ends.
-    // Aarray: Fixed size array. Fast random access.
+    // Array: Fixed size array. Fast random access.
 
     // Vectors and strings
     // Inserting an element on the back (yellow) is easy. That depends on the memory we have. Everything depends on the logic  of reallocation of an array. We can use ReAlloc.
@@ -88,9 +105,15 @@ void sequentialContainers() {
 
     // List and forward lists
     // It is efficient to add or remove an element from anywhere.
+    // unlike vectors and strings, which require potentially expensive reallocation.
+
+
 
     // Deque
     // Are more complicated. The memory is not contiguous. It is a double ended queue. It is a sequence container that allows insertion and deletion at both ends.
+    // Support Random access memory, and it's difficult to add and remove elements in the middle of the deque.
+    // Fast for removing and adding elements at the front and the back. It is a sequence container that encapsulates double ended queues.
+    // The memory is not contiguous.
 
     // Array
     // Fixed size array. Fast random access. It is a sequence container that encapsulates fixed size arrays.
@@ -110,13 +133,16 @@ void sequentialContainers() {
     // To create a new container we can use a default constructor. For example, we can create a vector of integers using the default constructor.
     vector<int> v; // v is a vector of integers.
     // To create a new container we can use a copy constructor. For example, we can create a vector of integers using the copy constructor.
-    vector<int> v3(v); // v1 is a vector of integers that is a copy of v.
+    vector<int> v8(v); // v8 is a vector of integers that is a copy of v.
     // To create a new container we can use an assignment operator. For example, we can create a vector of integers using the assignment operator.
-    vector<int> v5 = v; // v2 is a vector of integers that is a copy of v.
+    vector<int> v5 = v; // v5 is a vector of integers that is a copy of v.
+    // any changes made to v5 will not be reflected in v. Cuz it's just a copy
+
 
     // C c; // default constructor; c is an object of class C
 
     // First include the header file <vector> or <list> to use the vector container.
+
     vector<int> r1(10); // 10 values of 0
     vector<int> r2{10}; // 1 value of 10
     vector<int> r3(10, 1); // 10 values of 1
@@ -148,16 +174,18 @@ void sequentialContainers() {
 
     // All containers but arrays provide flexible memory management. They can grow or shrink in size.
     // we add or remove elements at run time.
+    // The reason why swap is good, because we don't need to copy the elements of the two containers. We just need to swap the pointers of the two containers.
 
+    // All containers but arrays provide flexible memory management. We can add or remove elements at runtime.
 
-
-
-
-    list<string> s1;
-    s1.push_back("hello");
-    s1.push_front("world");
+    list<string> s10;
+    s10.push_back("hello"); // push_back is used to add an element at the end of the list.
+    s10.emplace_back("world"); // emplace_back is used to add an element at the end of the list.
+    // difference between push_back and emplace_back is that push_back copies the element to the list and emplace_back moves the element to the list.
+    s10.push_front("world");
+    s10.emplace_front("hello");
+    s10.insert(s10.begin(), "!"); // insert is used to insert an element at a specific position in the list.
     // doubly linked list. Bi-directional sequential accesss.
-    s1.insert(s1.begin(), "!"); // insert is used to insert an element at a specific position in the list.
     // begin() is an iterator.
 
     vector<string> se;
@@ -172,282 +200,99 @@ void sequentialContainers() {
         it++;
     }// this will print the elements of the list.
     while (it != st.end()) {
-        if (*it % 2 == 0) {
+        if (*it % 2 == 0)
             it = st.erase(it);
-        }// this will remove the even elements of the list.
+    }// this will remove the even elements of the list
+    struct student_t {
+        int rn;
+        string last_name, first_name;
+        int mark;
+    } myt;
+    vector<student_t> students;
 
-
-
-
-
-
-
-
-
-    }
 }
 
 
-void algorithmLibrary() {
-    // It is essential
-
-
-
-
-    // many algorithms require a predicate. A predicate is a function that returns a boolean value. For example, we can create a predicate that returns true if the element is even and false otherwise.
-    // It returns a value that can be used as a condition.
-    // The default version of algorithm usually uses a standard predicate. For example, the default version of the find algorithm uses the equal_to predicate.
-    // eg. <, ==, >, <=, >=, !=, etc.
-    // The extended version usually supplies its own predicate.
-    // The extended version usually supplies its own predicate.
-
-    // Search has several variants possible. find(begin, end, value) is the simplest. It returns an iterator to the first element that matches the value.
-    // find_if(begin, end, predicate) is used to find the first element that satisfies the predicate.
-    // find_if_not(begin, end, predicate) is used to find the first element that does not satisfy the predicate.
-
-
-
-
-    // Sort has several variants possible. sort(begin, end) is the simplest. It sorts the elements in ascending order.
-
-
-
-    // Examples
-    // #include <algorithm>
-    // #include <vector>
-    // std::vector<unsigned> v = {3, 1, 4, 1, 5, 9};
-    // std::sort(v.begin(), v.end());// no predicate is used. The elements are sorted in ascending order.
-    // // now v is {1, 1, 3, 4, 5, 9}  sort uses the standard less predicate.
-
-    // include <algorithm>
-    // #include <vector>
-    // std::vector<string> words = {...};
-    // bool isShorter(const string &s1, const string &s2) {
-    // return s1.size() < s2.size();  // Ad - hoc predicate
-    // sort(words.begin(), words.end(), isShorter); // sort uses the isShorter predicate.
-    // Ad hoc means for a particular purpose. It is used to describe something that is created for a specific purpose.
-
-    // Introduction to set.
-    // A set is a container that stores unique elements. It is a sequence container that stores unique elements.
-    // The elements of the set are sorted in ascending order. The elements of the set are sorted in ascending order.
-
-    // Lambda expressions
-    // [capture_list] (parameter_list) -> return_type {body}
-    // A lambda expression is an anonymous function. It is a function that does not have a name. It is a function that does not have a name.
-    //    It can be thought of as an unnamed, inlinefunction
-    //     Like any other function, a lambda has
-    //     A parameter list, a return type, and a function body Unlike any other function, a lambda
-    //     May be defined inside a function
-    //     Being an internal function has a capture list
-    // Capture list is used to capture variables from the enclosing scope. It is used to capture variables from the enclosing scope.
-    // The parameter list is used to pass arguments to the lambda expression. It is used to pass arguments to the lambda expression.
-    // The return type is used to specify the return type of the lambda expression. It is used to specify the return type of the lambda expression.
-    // For example, we can create a lambda expression that takes two integers as arguments and returns the sum of the two integers. Like in the following:
-    auto sum = [](int a, int b) -> int { return a + b; };
-    // Auto is used to automatically deduce the type of the variable. It is used to automatically deduce the type of the variable.
-    auto minus = [](int a, int b) -> int { return a - b; };
-    // Here [] is the capture list. It is used to capture variables from the enclosing scope. Here [] is the capture list. It is used to capture variables from the enclosing scope.
-    // We use the function call operator () to call the lambda expression. We use the function call operator () to call the lambda expression.
-    minus(10, 5); // this will return 5.
-
-    // [](const string &a, cont string &b) {return a.size() < b.size();} is a lambda expression that takes two strings as arguments and returns true if the size of the first string is less than the size of the second string.
-    // You might ask we use const string &a instead of string a. The reason is that we want to pass the string by reference. If we pass the string by value, then the changes made to the string inside the lambda expression will not be reflected outside the lambda expression.
-
-    // [my_size](const string &a)
-    //{ return a.size() >= my_size; }
-
-//    auto wc = find_if(words.begin();
-//    words.end();)
-//    [sz](const string &a)
-//    { return a.size() >= sz; });
-
-    // int callFunc(int (*func)(int, int), int arg1, int arg2) {return func(arg1, arg2);
-    //}
-    //auto lambda = [](int arg1, int arg2) {
-    //return arg1 + arg2;
-    //};
-    //int i = callFunc(lambda, 2, 4);
-    //// Now i = 6
-    //int j = lambda(5, 6);
-    //// Now j = 11
-
-//    int i = 0;
-//    int j = 42;
-//    auto lambda1 = [i](){}; // i by-copy
-//    auto lambda2 = [&i](){}; // i by-reference
-//    auto lambda3 = [&j, i](){}; // j by-reference, i by-copyauto lambda4 = [=, &i](){}; // j by-copy, i by-reference// ERROR: non-diverging capture types
-//    auto lambda5 = [&, &i](){};
-//// ERROR: non-diverging capture types
-//    auto lambda6 = [=, i](){};
-
-//    The capture is done at the definition, thus
-//     In the capture by value, the value is persistent
-//     In the capture by reference, the reference is
-//    persistent (not the value)
-//    int i = 20;
-//    auto lambda1 = [i]() { return i + 42; };
-//    auto lambda2 = [&i]() { return i + 42; };
-//    i = 0;
-//    int a = lambda1();
-//// Now a = 20+42 = 62
-//    int b = lambda2();
-//// Now b = 0+42 = 42
-
-//    transform (v.begin(), v.end(), v.begin(),
-//               [](int i) { return i < 0 ? –i : i; }
-//    );
-//    transform (v.begin(), v.end(), v.begin(),
-//               [](int i) -> int
-//               { if (i<0) return –i; else return i; }
-//    );
-//    The algorithm transform takes three iterators:
-//    It transform the values included in the range specified by the first two iterators copying them to the third iteratorThere is only a return statement in the
-//    body; the type of the lambda is automatic
-//    Here, there are other statements, we need to
-//    define the return type with the trailing return
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Dynamic Memory
-// Our C++ programs so far have use only
-// static memory, that store static objects.
-// Objects allocated in the static and stack memory.
-
-// Programs can use heap memory. The heap is used to store dynamic objects.
-// The strategy directly derives from the C language.
-
-
-// in C functions, Malloc, calloc and free are used to allocate and deallocate memory.
-// C++ function: new and delete are used to create and destroy objects.
-
-// The new operator is used to allocate memory for an object. Allocates unnamed objects, thus returns a new pointer.
-
-// int * v1 = new int; // single variable initialized to 0
-
-// There are two versions of new.
-// The normal version where it fires an exception when memory is not available. Never returns a null pointer.
-// The nothrow version where it returns a null pointer when memory is not available. Never fires an exception.
-
-// Like in c, a pointer does not know the number of elements to which is pointing to. It just knows the address of the first element.
-
-// The delete operator free previously allocated memory.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+void associativeContainersEx(){
+//    Write a C++ program that reads a paragraph of
+//    text (a line of text) from the user
+//     Tokenize the input paragraph into words
+//     Ignore punctuation, consider only alphabetic
+//    characters, and transform characters in lowercase
+//     Create a map in which
+//     Words (in the text) are keys
+//     Values are frequencies (of that word in the text)
+//     Display the list of unique words and their
+//    frequencies alphabetically
+//     Find and display the total number of unique words
+//    in the paragrap
+//    Prompt the user to enter a word and then search
+//    the map to display the frequency of that word
+//     Create a set containing the unique words from the
+//    paragraph
+//     Display the unique words in the set sorted
+//    alphabetically
 }
 
-void input() {
-    cout << "Enter the student records (ID, Name< Grade): " << endl;
+void associativeContainers() {
+    // Associative containers are the containers that store elements in a sorted order, typically based on keys associated with the elements.
+    // The main associative containers in C++ are set, map, multiset, multimap, unordered_set, unordered_map, unordered_multiset, and unordered_multimap.
+    // The two primary associative containers are set and map.
+    // Maps, whose elements are key-value pairs. The key is used to access the value.
+    // Sets, whose elements are just keys.
 
+    // The word multi means multiple keys. Unordered means the use of a hash function.
+    map<string, int> myMap;  // emppty map
+    map<string, string> authors = {
+            {"Meelad", "Dashti"},
+            {"name",   "lastName"}
+    };
+    map<string, size_t> word_count;
+    word_count.insert({"hello", 1});
+    word_count.insert({"world", 2});
+    word_count.insert({"!", 3});
+    word_count.insert({"!", 4});
+    word_count.insert(pair<string, size_t>("!", 5));
+    // pair is a template class that stores two values. The first value is the key and the second value is the value.
+    word_count.insert(make_pair("!", 6));
+    // make_pair is a function that creates a pair object. It takes two arguments and returns a pair object.
+    word_count.insert(map<string, size_t>::value_type("!", 7));
+    // value_type is a type that is used to store the key and the value of the map.
 
-    cout << "Choose sorting criteria" << endl << "1. Sort By ID" << endl << "2. Sort by Name" << endl
-         << "3. Sort by Grade" << endl;
+    // The pair type
+    pair<string, int> anon; // default constructor; anon has an empty string and 0
+    pair<int, int> p(42, 21); // p has the value 42 and 21
+    pair<int, int> p2 = make_pair(42, 21); // same as p
 
-
-}
-
-struct Student {
-    int id;
-    std::string name;
-    double grade;
-    // data structure and output function
-};
-
-int main() {
-    std::vector<Student> students;
-    int id;
-    std::string name;
-    double grade;
-    cout << "Enter the student records (ID, Name< Grade): " << endl;
-    while (true) {
-        std::cout << ">";
-        if (!(std::cin >> id >> name >> grade)) {
-            break;
+    // Compute the absolute frequency of input words.
+    map<string, size_t> word_count2;
+    string word;
+    while (cin >> word) {
+        auto ret = word_count2.insert({word, 1});
+        if (!ret.second) {
+            ++ret.first->second;
         }
-        students.push_back({id, name, grade});
     }
-    int n;
-    cout << "Enter your choice:" << endl;
-    cin >> n;
-
-
-}
-
-
-void exercise() {
-    int id;
-    string name;
-    string;
-
-
-}
-
-
-int sum(vector<int> &nums) { // how would it be differnt if we remove the & sign?
-    // The & sign is used to pass the argument by reference. If we remove the & sign, then the argument will be passed by value.
-    // When we pass the argument by value, then the changes made to the argument inside the function will not be reflected outside the function.
-    // What is vector in c++? Vector is a sequence container that encapsulates dynamic size arrays.
-    // For example, you can create a vector of integers and use it as an array.
-    // It is basically an array that can change its size.
-    // In java it is called ArrayList. And in python it is called list.
-    // In c++ it is called vector.
-    int sum = 0;
-    for (int k: nums) {
-        cout << k << " ";
-        sum += k;
+    // Iterating through a map.
+    for (const auto &w: word_count2) {
+        cout << w.first << " occurs " << w.second << " times." << endl;
     }
-    cout << "The sum of the above sequence of numbers is: " << sum << endl;
-    cout
-            << "As nums vector is passed by reference, the changes made to the nums vector inside the function will be reflected outside the function."
-            << endl;
-    // Vector has methods like push_back, pop_back, insert, erase, clear, empty, size, etc.
-    nums.push_back(100);// push_back is used to add an element at the end of the vector.
-    nums.pop_back();// pop_back is used to remove the last element of the vector.
-    nums.resize(10);// resize is used to change the size of the vector.
-    nums.insert(nums.begin() + 2, 200);// insert is used to insert an element at a specific position in the vector.
-    // here we are inserting 200 at the 3rd position of the vector.
-    // the reason why nums.insert(3,200) gives an error is because the first argument of the insert method is an iterator.
-    // nums.begin() + 2 is an iterator that points to the 3rd element of the vector.
-    return sum;
+    // or
+    auto it = word_count2.begin();
+    while (it != word_count2.end()) {
+        cout << it->first << " occurs " << it->second << " times." << endl;
+        it++;
+    }
+
+    // Set
+    set<int> iset = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    auto it1 = iset.find(1); // returns the iterator pointing to the element 1
+
+    // Associative array exercise
+    associativeContainersEx();
 }
 
-int main() {
-    int n;
-    cin >> n;
-    vector<int> nums(n);
-    for (int i = 0; i < n; i++) {
-        cin >> nums[i];
-    }
-    sum(nums);
-    cout << "The changes made to the nums vector inside the function are reflected outside the function." << endl;
-    cout << nums.size() << endl;
-    return 0;
-}
+
+
+
+
