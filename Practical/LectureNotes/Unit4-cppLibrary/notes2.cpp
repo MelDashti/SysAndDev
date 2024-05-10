@@ -7,8 +7,15 @@ using namespace std;
 
 int main() {
 
-
 }
+
+void copyControl(){
+    // Copy control is performed by copy and move constructors, destructor, and copy and move assignment operators.
+    // Copy control is used to manage the copying and moving of objects.
+}
+
+
+
 
 void algorithmLibrary() {
 
@@ -143,14 +150,14 @@ void algorithmLibrary() {
 //     In the capture by value, the value is persistent
 //     In the capture by reference, the reference is
 //    persistent (not the value)
-//    int i = 20;
-//    auto lambda1 = [i]() { return i + 42; };
-//    auto lambda2 = [&i]() { return i + 42; };
-//    i = 0;
-//    int a = lambda1();
-//// Now a = 20+42 = 62
-//    int b = lambda2();
-//// Now b = 0+42 = 42
+    int i = 20;
+    auto lambda1 = [i]() { return i + 42; };
+    auto lambda2 = [&i]() { return i + 42; };
+    i = 0;
+    int r = lambda1();
+// Now a = 20+42 = 62
+    int b = lambda2();
+// Now b = 0+42 = 42
 
 //    transform (v.begin(), v.end(), v.begin(),
 //               [](int i) { return i < 0 ? –i : i; }
@@ -166,16 +173,8 @@ void algorithmLibrary() {
 //    define the return type with the trailing return
 }
 
-void algoLibEx() {
-
-}
-
 void dynamicMemory() {
 
-// Dynamic Memory
-// Our C++ programs so far have use only
-// static memory, that store static objects.
-// Objects allocated in the static and stack memory.
 
 // Programs can use heap memory. The heap is used to store dynamic objects.
 // The strategy directly derives from the C language.
@@ -184,15 +183,24 @@ void dynamicMemory() {
 // in C functions, Malloc, calloc and free are used to allocate and deallocate memory.
 // C++ function: new and delete are used to create and destroy objects.
 
-// The new operator is used to allocate memory for an object. Allocates unnamed objects, thus returns a new pointer.
+// Old c like functions can also be used in c++ or new and delete can be used.
+// New is similar to malloc and delete is similar to free. Like in c memory is managed directly.
 
-// int * v1 = new int; // single variable initialized to 0
+// Like in C, a pointer does not know the type of the object to which it is pointing to
+// It just knows the address of the first element.
 
-// There are two versions of new.
-// The normal version where it fires an exception when memory is not available. Never returns a null pointer.
-// The nothrow version where it returns a null pointer when memory is not available. Never fires an exception.
+    int *p1 = new int(10); // dynamically allocated.
+    int *p2 = p1;
+//float *p3 = p1; different type so error
 
-// Like in c, a pointer does not know the number of elements to which is pointing to. It just knows the address of the first element.
+// Managing memory through delete and new can be error prone. Dangling pointers nd mem leaks are dangerous
+// When a pointer is deleted although the pointer is invalid it still points to the address this is called dangling pointer
+// to avoid dangling pointer and memory leaks
+// we can set dangling pointer to null pointer
+    int *ptr2 = nullptr;
+    delete ptr2;
+    ptr2 = nullptr;
 
-// The delete operator free previously allocated memory.
+
 }
+

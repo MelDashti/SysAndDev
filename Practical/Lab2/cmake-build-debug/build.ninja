@@ -185,6 +185,39 @@ build unit03.exe: CXX_EXECUTABLE_LINKER__unit03_Debug CMakeFiles/unit03.dir/C_/U
   TARGET_PDB = unit03.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target unit04CopyControl
+
+
+#############################################
+# Order-only phony target for unit04CopyControl
+
+build cmake_object_order_depends_target_unit04CopyControl: phony || CMakeFiles/unit04CopyControl.dir
+
+build CMakeFiles/unit04CopyControl.dir/C_/Users/meela/Desktop/System_And_Device_Programming/Practical/LectureNotes/Unit4-cppLibrary/notesCopyControl.cpp.obj: CXX_COMPILER__unit04CopyControl_unscanned_Debug C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit4-cppLibrary/notesCopyControl.cpp || cmake_object_order_depends_target_unit04CopyControl
+  DEP_FILE = CMakeFiles\unit04CopyControl.dir\C_\Users\meela\Desktop\System_And_Device_Programming\Practical\LectureNotes\Unit4-cppLibrary\notesCopyControl.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\unit04CopyControl.dir
+  OBJECT_FILE_DIR = CMakeFiles\unit04CopyControl.dir\C_\Users\meela\Desktop\System_And_Device_Programming\Practical\LectureNotes\Unit4-cppLibrary
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unit04CopyControl
+
+
+#############################################
+# Link the executable unit04CopyControl.exe
+
+build unit04CopyControl.exe: CXX_EXECUTABLE_LINKER__unit04CopyControl_Debug CMakeFiles/unit04CopyControl.dir/C_/Users/meela/Desktop/System_And_Device_Programming/Practical/LectureNotes/Unit4-cppLibrary/notesCopyControl.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\unit04CopyControl.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = unit04CopyControl.exe
+  TARGET_IMPLIB = libunit04CopyControl.dll.a
+  TARGET_PDB = unit04CopyControl.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target unit04
 
 
@@ -224,6 +257,39 @@ build unit04.exe: CXX_EXECUTABLE_LINKER__unit04_Debug CMakeFiles/unit04.dir/C_/U
   TARGET_PDB = unit04.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target unit04Ex
+
+
+#############################################
+# Order-only phony target for unit04Ex
+
+build cmake_object_order_depends_target_unit04Ex: phony || CMakeFiles/unit04Ex.dir
+
+build CMakeFiles/unit04Ex.dir/C_/Users/meela/Desktop/System_And_Device_Programming/Practical/LectureNotes/Unit4-cppLibrary/algoLibExercise.cpp.obj: CXX_COMPILER__unit04Ex_unscanned_Debug C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit4-cppLibrary/algoLibExercise.cpp || cmake_object_order_depends_target_unit04Ex
+  DEP_FILE = CMakeFiles\unit04Ex.dir\C_\Users\meela\Desktop\System_And_Device_Programming\Practical\LectureNotes\Unit4-cppLibrary\algoLibExercise.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\unit04Ex.dir
+  OBJECT_FILE_DIR = CMakeFiles\unit04Ex.dir\C_\Users\meela\Desktop\System_And_Device_Programming\Practical\LectureNotes\Unit4-cppLibrary
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unit04Ex
+
+
+#############################################
+# Link the executable unit04Ex.exe
+
+build unit04Ex.exe: CXX_EXECUTABLE_LINKER__unit04Ex_Debug CMakeFiles/unit04Ex.dir/C_/Users/meela/Desktop/System_And_Device_Programming/Practical/LectureNotes/Unit4-cppLibrary/algoLibExercise.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\unit04Ex.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = unit04Ex.exe
+  TARGET_IMPLIB = libunit04Ex.dll.a
+  TARGET_PDB = unit04Ex.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target unit05
 
 
@@ -255,6 +321,39 @@ build unit05.exe: CXX_EXECUTABLE_LINKER__unit05_Debug CMakeFiles/unit05.dir/C_/U
   TARGET_FILE = unit05.exe
   TARGET_IMPLIB = libunit05.dll.a
   TARGET_PDB = unit05.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target unit05Notes
+
+
+#############################################
+# Order-only phony target for unit05Notes
+
+build cmake_object_order_depends_target_unit05Notes: phony || CMakeFiles/unit05Notes.dir
+
+build CMakeFiles/unit05Notes.dir/C_/Users/meela/Desktop/System_And_Device_Programming/Practical/LectureNotes/Unit5-multithreading/notes.c.obj: C_COMPILER__unit05Notes_unscanned_Debug C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit5-multithreading/notes.c || cmake_object_order_depends_target_unit05Notes
+  DEP_FILE = CMakeFiles\unit05Notes.dir\C_\Users\meela\Desktop\System_And_Device_Programming\Practical\LectureNotes\Unit5-multithreading\notes.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\unit05Notes.dir
+  OBJECT_FILE_DIR = CMakeFiles\unit05Notes.dir\C_\Users\meela\Desktop\System_And_Device_Programming\Practical\LectureNotes\Unit5-multithreading
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unit05Notes
+
+
+#############################################
+# Link the executable unit05Notes.exe
+
+build unit05Notes.exe: C_EXECUTABLE_LINKER__unit05Notes_Debug CMakeFiles/unit05Notes.dir/C_/Users/meela/Desktop/System_And_Device_Programming/Practical/LectureNotes/Unit5-multithreading/notes.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\unit05Notes.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = unit05Notes.exe
+  TARGET_IMPLIB = libunit05Notes.dll.a
+  TARGET_PDB = unit05Notes.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target ex2
@@ -327,7 +426,13 @@ build unit03: phony unit03.exe
 
 build unit04: phony unit04.exe
 
+build unit04CopyControl: phony unit04CopyControl.exe
+
+build unit04Ex: phony unit04Ex.exe
+
 build unit05: phony unit05.exe
+
+build unit05Notes: phony unit05Notes.exe
 
 # =============================================================================
 # Folder targets.
@@ -337,7 +442,7 @@ build unit05: phony unit05.exe
 #############################################
 # Folder: C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2/cmake-build-debug
 
-build all: phony ex4.exe ex3.exe ex1.exe unit03.exe unit04.exe unit05.exe ex2.exe
+build all: phony ex4.exe ex3.exe ex1.exe unit03.exe unit04CopyControl.exe unit04.exe unit04Ex.exe unit05.exe unit05Notes.exe ex2.exe
 
 # =============================================================================
 # Built-in targets

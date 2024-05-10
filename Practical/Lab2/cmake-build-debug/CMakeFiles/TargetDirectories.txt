@@ -2,8 +2,11 @@ C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2/cmake-build-
 C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2/cmake-build-debug/CMakeFiles/ex3.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2/cmake-build-debug/CMakeFiles/ex1.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2/cmake-build-debug/CMakeFiles/unit03.dir
+C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2/cmake-build-debug/CMakeFiles/unit04CopyControl.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2/cmake-build-debug/CMakeFiles/unit04.dir
+C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2/cmake-build-debug/CMakeFiles/unit04Ex.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2/cmake-build-debug/CMakeFiles/unit05.dir
+C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2/cmake-build-debug/CMakeFiles/unit05Notes.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2/cmake-build-debug/CMakeFiles/ex2.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/Lab2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
