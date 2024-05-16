@@ -1,6 +1,0 @@
-C:/Users/meela/Desktop/System And Device Programming/Practical/Lab1/cmake-build-debug/CMakeFiles/untitled.dir
-C:/Users/meela/Desktop/System And Device Programming/Practical/Lab1/cmake-build-debug/CMakeFiles/notes.dir
-C:/Users/meela/Desktop/System And Device Programming/Practical/Lab1/cmake-build-debug/CMakeFiles/untitled1.dir
-C:/Users/meela/Desktop/System And Device Programming/Practical/Lab1/cmake-build-debug/CMakeFiles/lab.dir
-C:/Users/meela/Desktop/System And Device Programming/Practical/Lab1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/meela/Desktop/System And Device Programming/Practical/Lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

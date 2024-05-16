@@ -8,13 +8,13 @@ int main() {
     for (i = 1; i <= 3; i++) {
         switch (i) {
             case 1:
-                fork();
+//                fork();
                 break; // What fork() does is that it creates a new process by duplicating the calling process.
                 // The new process is called the child process, and the calling process is called the parent process.
                 // The child process and the parent process run in separate memory spaces. At the time of fork() both the parent
                 // and child processes start executing from the next instruction after the fork() call.
             case 2:
-                pid = fork();
+//                pid = fork();
                 if (pid != 0) system("echo case 2");
                 break; // Here we can see if the parent process or the child process is executing the code by checking the value of pid.
                 // if pid is not equal to 0, then the parent process is executing the code, otherwise the child process is executing the code.
@@ -29,4 +29,4 @@ int main() {
                 break;
         }
         return (0);
-    }
+    }}

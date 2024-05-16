@@ -69,7 +69,7 @@ void sequentialContainers() {
     // Realloc is used to change the size of the memory block pointed to by the pointer. It is used to change the size of the memory block pointed to by the pointer.
     // We first copy the elements of the old array to the new array. Then we delete the old array. Then we point the old array to the new array.
     // this is how we use realloc.
-    int v0[5] = {1, 2, 3, 4, 5};
+//    int v0[5] = {1, 2, 3, 4, 5};
     int *p = v0;
     int *q = (int *) realloc(p, 10 * sizeof(int));
     if (q == NULL) {
@@ -380,32 +380,32 @@ struct Student {
     double grade;
     // data structure and output function
 };
-
-int main() {
-    std::vector<Student> students;
-    int id;
-    std::string name;
-    double grade;
-    cout << "Enter the student records (ID, Name< Grade): " << endl;
-    while (true) {
-        std::cout << ">";
-        if (!(std::cin >> id >> name >> grade)) {
-            break;
-        }
-        students.push_back({id, name, grade});
-    }
-    int n;
-    cout << "Enter your choice:" << endl;
-    cin >> n;
-
-
-}
+//
+//int main() {
+//    std::vector<Student> students;
+//    int id;
+//    std::string name;
+//    double grade;
+//    cout << "Enter the student records (ID, Name< Grade): " << endl;
+//    while (true) {
+//        std::cout << ">";
+//        if (!(std::cin >> id >> name >> grade)) {
+//            break;
+//        }
+//        students.push_back({id, name, grade});
+//    }
+//    int n;
+//    cout << "Enter your choice:" << endl;
+//    cin >> n;
+//
+//
+//}
 
 
 void exercise() {
     int id;
     string name;
-    string;
+//    string;
 
 
 }
