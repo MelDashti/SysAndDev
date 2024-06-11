@@ -32,7 +32,7 @@ void slide1To2() {
     // pointers are use for dynamic memory allocation
     int arr[5] = {2, 3, 1, 2, 3};
     int *p1 = arr; // p1 points to the first element of the array
-    *p1++; // p1 now points to the second element of the array
+    p1++; // p1 now points to the second element of the array
     cout << *p1 << endl; // prints 3
 
     int *ptr = nullptr; // null pointer, don't point to any valid address.
@@ -40,7 +40,7 @@ void slide1To2() {
     // pointers
     int arr2[5] = {1, 6, 7, 2, 5};
     int *p3 = arr2;
-    *p3++;
+    p3++;
     // p3 now points to the second element of the array
     cout << p3 << endl; // prints the address of the second element of the array
     cout << *p3 << endl; // prints 6

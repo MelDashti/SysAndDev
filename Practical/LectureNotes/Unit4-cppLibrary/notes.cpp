@@ -213,7 +213,7 @@ void sequentialContainers() {
 }
 
 
-void associativeContainersEx(){
+void associativeContainersEx() {
 //    Write a C++ program that reads a paragraph of
 //    text (a line of text) from the user
 //     Tokenize the input paragraph into words
@@ -285,8 +285,21 @@ void associativeContainers() {
     }
 
     // Set
-    set<int> iset = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-    auto it1 = iset.find(1); // returns the iterator pointing to the element 1
+    set<int> s = {0, 2, 3, 1, 4, 5, 6, 7, 8, 9};
+    auto it1 = s.find(1);
+    // the find function returns an iterator pointing to the element
+    // if it is found, otherwise it returns an iterator pointing to set::end.
+
+    auto it2 = s.find(11); // since we don't have 11 it returns an iterator pointing to the end
+
+    auto n1 = s.count(1); // since the occurrences are always 1.
+    // it will return the num of occurence as 1 if exists.
+
+    vector<int> vec2 = {2, 3, 4, 3, 4, 5, 6, 6};
+    s.insert(vec2.begin() + 1, vec2.end());
+
+
+
 
     // Associative array exercise
     associativeContainersEx();
