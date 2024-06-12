@@ -56,6 +56,9 @@ public:
         this->m_length = to_copy.m_length;
     }
 
+    // copy assignment operator
+    Rectangle &operator=(const Rectangle &);
+
     // Member function to display dimensions
     void displayDimensions() {
         std::cout << "Width: " << m_width << ", Length: " << m_length << std::endl;
@@ -118,6 +121,33 @@ DynamicClass::DynamicClass(const char *str) {
 //This function iterates through each character of the source string str and copies it to the destination string m_string, including the null terminator.
 
 
+class Foo {
+private:
+    string number;
+    int sold;
+    double revenue;
+public:
+    // this is the copy constructor
+    Foo(const Foo &foo) {
+        this->number = foo.number;
+        this->sold = foo.sold;
+        this->revenue = foo.revenue;
+    }
+
+    // this is the copy assignment operator
+    Foo &operator=(const Foo &foo) {
+        this->number = foo.number;
+        this->sold = foo.sold;
+        this->revenue = foo.revenue;
+        return *this;
+    }
+
+    ~Foo();
+
+
+};
+
+
 //Copy constructor & Assignment
 class sales {
 public:
@@ -145,5 +175,14 @@ int main() {
     Car c1; // here we create the original car object
     Car c2(c1); // here we create a new car object and pass the original car object to it
     delete &c1; // destructor is called here
+
+    // Move semantics
+    // They were introduced in c++11, they are designed to efficiently transfer resources (like dynamically allocated memory) from one
+    // one object to another. Typically in cases where creating a copy is uncessary or expensive.
+
+
+
+
+
 
 }

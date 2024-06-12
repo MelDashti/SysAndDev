@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <string>
+#include <memory>
 
 using namespace std;
 
@@ -9,12 +10,10 @@ int main() {
 
 }
 
-void copyControl(){
+void copyControl() {
     // Copy control is performed by copy and move constructors, destructor, and copy and move assignment operators.
     // Copy control is used to manage the copying and moving of objects.
 }
-
-
 
 
 void algorithmLibrary() {
@@ -76,7 +75,15 @@ void algorithmLibrary() {
 
     std::vector<string> words = {};
 
-//    bool isShorter(const string &s1, const string &s2){
+    vector<int> v20{39, 20, 30, 40, 55, 66, 77, 93, 100};
+
+    sort(v20.begin(), v20.end());
+    for (int i: v20) {
+        cout << i;
+    }
+
+
+    //    bool isShorter(const string &s1, const string &s2){
 //        return s1.size() < s2.size();
 //    };// Ad - hoc predicate
 //    sort(words.begin(), words.end(), isShorter()); // sort uses the isShorter predicate.
@@ -189,18 +196,102 @@ void dynamicMemory() {
 // Like in C, a pointer does not know the type of the object to which it is pointing to
 // It just knows the address of the first element.
 
-    int *p1 = new int(10); // dynamically allocated.
-    int *p2 = p1;
-//float *p3 = p1; different type so error
+    int *t = new int; // this is like malloc cuz it is a single variable with no initialization (malloc)
+    // hence *t is undefined
 
-// Managing memory through delete and new can be error prone. Dangling pointers nd mem leaks are dangerous
-// When a pointer is deleted although the pointer is invalid it still points to the address this is called dangling pointer
-// to avoid dangling pointer and memory leaks
-// we can set dangling pointer to null pointer
-    int *ptr2 = nullptr;
-    delete ptr2;
-    ptr2 = nullptr;
+    int *t2 = new int(); // this is like calloc, cuz single variable initalized to 0;
 
+    int *t3 = new int(12); // this is a single variable initalized to 12 similar to calloc.
+
+    int *p2 = new int; // if allocation fails it throws bad_alloc.
+
+    // but when we write it this way
+    int *p1 = new(nothrow) int; // if the allocation fails it returns nullptr
+
+    int *p3 = new(nothrow) int[20]; // array of size 20 or a nullptr
+
+    // It is possible to allocate constant objects
+    const int *ptr = new const int(100); // returned pointer is pointer to the constant object
+
+    // const my_class *p5 = new const my_class;
+
+    // A pointer doesn't know the number of elements to which it is pointing to
+    // It just knows the address of the first element.
+
+    double *ptr1 = new double;
+    *ptr1 = 7.3; // works fine
+    ptr1[0] = 8; // this is equivalent to (ptr1 + 0) so fine
+    ptr1[3] = 9; // this doesn't work
+
+    double *ptr2 = new double[20];
+    *ptr2 = 7.3; // works fine
+    ptr2[0] = 8; // this is equivalent to (ptr1 + 0) so fine
+    ptr2[3] = 9; // this works well now
+
+    // again just like in c the pointer also does not know the type of the object to which it is pointing to
+    // it just knows the address of the first element.
+
+    // To avoid memory exhaustion, we must return the allocated memory to the system.
+    // A dynamic object exists until
+    delete (ptr); // this is how you delete for single objects
+    delete[] (ptr2); // this is how we delete for an array
+    // for a class just delete p.  It calls the destructor.
+
+    // Dynamic objects managed through built-in pointers exist until they are explicitly deleted
+    // Dangling pointers and mem leaks
+
+    // To avoid dangling pointers we can set the pointer to nullptr when we define a pointer
+    // or delete a pointer
+
+    int *ptrr = nullptr;
+
+    // after deleting
+    delete (ptrr);
+    ptrr = nullptr;
+    // Unfortunately, bugs are easy to introduce and these tricks are not to avoid dangling pointers and mem leaks
+
+    // we can use sequential and associative containers which don't require the explicit use of new and delete
+    // Or we can use an automatic garbage collector.
+    // C++ implements this technique through smart pointers.
+    // Automatically deletes when out of scope
+    // this techinique is often referred to as RAII
+    //    A resource is available during the entire lifetime of
+    //    the object (pointer)
+    //     The resource is released when the lifetime of the
+    //    object (pointer) ends
+
+    // We have three different types of smart pointers.
+    // we have three types, shared_ptr, unique_ptr, and weak_ptr
+
+    // Shared pointers.
+    // the safest way to allocate mem is to call make_shared.
+    // this func allocates and initializes a resource into the heap
+    // and returns a shared pointer pointing to it.
+
+    shared_ptr<string> sharedPtr; // shared pointer points to a string, if we don't initialize it will point to a nullptr
+    shared_ptr<vector<int>> sharedPtr1;
+
+    // we can allocate shared pointers using the new operator in c++
+    // It's possible to use new, but its not the recommended way as it's less efficient and requires two allocations
+    // one for the mem and another for the counter that keeps track of how many shared pointers are pointing to the same location.
+//    shared_ptr<int> p11 = new int(42); // incorrect
+    shared_ptr<int> p11(new int(42)); // this works
+//    shared_ptr<int> p3 = shared_pointer<int>(new int(9)); // this works too
+
+    shared_ptr<int> p0 = make_shared<int>(20);
+    shared_ptr<int> p = make_shared<int>(10);
+    p0 = p;
+    // p now points to q.
+
+    // unique pointers
+    unique_ptr<int> uniquePtr(new int(14));
+    // unique pointers can't be copied but when they are about to be destroyed you can return like this
+    // return unique_prt<int>(new int(ptr));
+
+
+
+
+    //
 
 }
 
