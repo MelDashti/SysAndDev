@@ -68,3 +68,62 @@ int main() {
 //The thread will not exit the pthread_cond_wait function until it successfully re-acquires the mutex. This ensures that when the thread resumes execution after waiting, it holds the mutex, just as it did when it initially called pthread_cond_wait.
 //5. Proceed with Execution:
 //Once the mutex is re-acquired, the thread can safely check the condition and proceed with its execution, knowing that it has exclusive access to the shared resources protected by the mutex.
+
+
+//#include <stdio.h>
+//#include <semaphore.h>
+//#include <pthread.h>
+//#include <unistd.h>
+//
+//pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER; // initializes a mutex
+//pthread_cond_t cv = PTHREAD_COND_INITIALIZER; // initializes a conditional variable
+//int ready = 0; // A flag to indicate when the signal is ready!
+//
+//void *waitForTheSignal() {
+//    pthread_mutex_lock(&mutex); // lock the mutex
+//    while (!ready) {
+//        pthread_cond_wait(&cv, &mutex); // wait for the signal
+//    }
+//    printf("Thread 1 received the signal\n");
+//    pthread_mutex_unlock(&mutex); // unlock the mutex
+//    return NULL;
+//}
+//
+//void *sendTheSignal() {
+//    sleep(1);// simulate some word
+//    pthread_mutex_lock(&mutex); // lock the mutex
+//    ready = 1;
+//    printf("Thread 2 sent the signal\n");
+//    pthread_cond_signal(&cv); // send the signal
+//    pthread_mutex_unlock(&mutex); // unlock the mutex
+//    return NULL;
+//}
+//
+//int done = 0;
+//
+//void *child(void *arg) {
+//    pthread_mutex_lock(&mutex);
+//    done = 1;
+//    pthread_cond_signal(&cv);
+//    pthread_mutex_unlock(&mutex);
+//    return NULL;
+//}
+//
+//
+//int main() {
+//    pthread_t p;
+//    pthread_create(&p, NULL, child, NULL);
+//    pthread_mutex_lock(&mutex);
+//    while (done == 0) {
+//        pthread_cond_wait(&cv, &mutex);
+//    }
+//    pthread_mutex_unlock(&mutex);
+//
+//
+//    //    pthread_t t1, t2;
+////    pthread_create(&t1, NULL, waitForTheSignal, NULL);
+////    pthread_create(&t2, NULL, sendTheSignal, NULL);
+////    pthread_join(t1, NULL);
+////    pthread_join(t2, NULL);
+//
+//}

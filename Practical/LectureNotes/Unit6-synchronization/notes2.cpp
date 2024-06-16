@@ -9,13 +9,27 @@ using namespace std;
 mutex m;
 recursive_mutex rm;
 
-void f2(){
+
+// here we see how using RAII can help us avoiding errors in the code when dealing with mutexes
+void RAIIWrapper() {
+    lock_guard<mutex> lg(m); // mutex is locked when lg is created and unlocked when lg goes out of scope
+    unique_lock<mutex> ul(m); // mutex is locked when ul is created and unlocked when ul goes out of scope
+    // unique_lock is used when we want to lock and unlock the mutex multiple times
+}
+
+void RAIIExample() {
+    unique_lock l{m};
+
+}
+
+
+void f2() {
     rm.lock(); // lock the recursive mutex
     cout << "bar \n" << endl; // f2 must also lock and unlock IO because can be called directly (not through f1)
     rm.unlock(); // unlock the recursive mutex
 }
 
-void f1(){
+void f1() {
     rm.lock(); // lock the recursive mutex
     cout << "f1" << endl;
     f2(); // call f2 which locks the same mutex
@@ -46,16 +60,17 @@ int main() {
     int value = 0;
     std::shared_mutex sm;
     vector<thread> tv;
-    for(int i=0; i<5; i++){
-        tv.emplace_back([&]{ // [&] means that the lambda function captures all variables by reference. so any variable if changed in the lambda function will be changed in the main function as well
-            sm.lock_shared();
+    for (int i = 0; i < 5; i++) {
+        tv.emplace_back(
+                [&] { // [&] means that the lambda function captures all variables by reference. so any variable if changed in the lambda function will be changed in the main function as well
+                    sm.lock_shared();
 //            value++; // error because we are trying to write to value while it is shared_locked, other threads can read value but not write to it
-            cout<<value<<endl; // no error because we are only reading value
-            sm.unlock_shared();
-        });
+                    cout << value << endl; // no error because we are only reading value
+                    sm.unlock_shared();
+                });
     }
-    for(int i =0; i<5; i++){
-        tv.emplace_back([&]{
+    for (int i = 0; i < 5; i++) {
+        tv.emplace_back([&] {
             sm.lock();
             value++; // no error because we are writing to value while it is locked
             sm.unlock();

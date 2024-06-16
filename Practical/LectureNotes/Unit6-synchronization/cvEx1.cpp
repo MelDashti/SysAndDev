@@ -15,11 +15,29 @@ struct Semaphore {
     condition_variable cv;
 };
 
-void notify() {
+Semaphore semaphore;
 
+void notify() {
+    // even here we have to define the unique lock
+    unique_lock<mutex> lock(semaphore.mtx);
+    semaphore.count += 1;
+    semaphore.cv.notify_one();
+    // we don't need to unlock cuz mutex is automatically unlocked when lock goes out of scope
 }
 
 void sem_wait() {
-    unique_lock<mutex> lock(m);
+    // the unique lock is declared here inside the sem_wait because
+    // unique lock automatically locks and unlocks the mutex within a scope,
+    // and each fun should have its own scope for locking mutex.
+    unique_lock<mutex> u_lock(semaphore.mtx);
+//    u_lock.lock(); this is not needed because in the previous line its locking by default.
+    while (semaphore.count == 0) {
+        semaphore.cv.wait(u_lock);
+    }
+    semaphore.count -= 1;
+    //     // mutex is automatically unlocked when lock goes out of scope
 }
 
+int main() {
+
+}

@@ -5,7 +5,8 @@
 
 using namespace std;
 
-// Mutexes cannot be used because they must be locked and unlocked by the same thread
+// Mutexes cannot be used because they must be locked and unlocked by the same thread so we use semaphores for sa and sb
+// but instea of me semaphore a mutex can also be used cuz it is only incharge of updating the n value and printing.
 counting_semaphore sa{1}, sb{2}, me{1};
 // we have 2 semaphores sa and sb initialized with values 1 and 2.
 // Semaphores are used for controlling access to a common resource by multiple processes in a concurrent system
