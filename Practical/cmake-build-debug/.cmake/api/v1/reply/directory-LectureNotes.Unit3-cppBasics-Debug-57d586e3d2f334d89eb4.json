@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "LectureNotes/Unit3-cppBasics",
+		"source" : "LectureNotes/Unit3-cppBasics"
+	}
+}

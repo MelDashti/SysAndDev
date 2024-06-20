@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-
 int main() {
     pid_t pid; // pid_t is a data type defined in the library <sys/types.h> and is used to represent process IDs.
     int i;

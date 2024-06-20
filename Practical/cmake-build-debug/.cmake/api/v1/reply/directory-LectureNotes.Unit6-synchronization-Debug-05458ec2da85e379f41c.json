@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "LectureNotes/Unit6-synchronization",
+		"source" : "LectureNotes/Unit6-synchronization"
+	}
+}
