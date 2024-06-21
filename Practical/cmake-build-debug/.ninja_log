@@ -1,11 +1,13 @@
 # ninja log v6
-12	589	7405323235160277	build.ninja	2485be50b699616f
+12	589	7406821875127918	build.ninja	2485be50b699616f
+289	656	7405323345466595	LectureNotes/Unit2-recap/unit2Ex3.exe	15b57bc2327bc850
 13	257	7401534573914206	LectureNotes/Unit5-multithreading/CMakeFiles/multithreading.dir/notes.c.obj	6dfe997d7c8093d5
 20	237	7401534573984222	LectureNotes/Unit5-multithreading/CMakeFiles/multithreading.dir/practiceCpp.cpp.obj	405e66acabd53de6
 27	251	7401534574054830	LectureNotes/Unit5-multithreading/CMakeFiles/multithreading.dir/exercisePosex.c.obj	6d0f0d2f83ab893
+16	3045	7406816721643491	Lab5/CMakeFiles/lab5q2.dir/q3.cpp.obj	b23379c74a2283cb
 13	1581	7401609177377636	LectureNotes/Unit5-multithreading/CMakeFiles/multithreading.dir/notesUnit5.cpp.obj	2ac8842a76460c60
-8	164	7401535086371555	LectureNotes/Unit5-multithreading/CMakeFiles/exerciseMultithreading.dir/exercisePosex.c.obj	2b1a6572f91ef0a7
 13	166	7401904534523224	LectureNotes/Unit6-synchronization/CMakeFiles/unit6Prac1.dir/practice.cpp.obj	a362c857328b4f32
+8	164	7401535086371555	LectureNotes/Unit5-multithreading/CMakeFiles/exerciseMultithreading.dir/exercisePosex.c.obj	2b1a6572f91ef0a7
 171	325	7401535088004603	LectureNotes/Unit5-multithreading/exerciseMultithreading.exe	2142c2d418445a99
 167	289	7401904536053729	LectureNotes/Unit6-synchronization/unit6Prac1.exe	a7a4a1f99116c0c7
 14	2432	7401920664341490	LectureNotes/Unit6-synchronization/CMakeFiles/unit6ex2.dir/ex2.cpp.obj	3eb48dd4838c714a
@@ -15,4 +17,13 @@
 14	2119	7402429283265531	LectureNotes/Unit6-synchronization/CMakeFiles/unit6cvEx2.dir/cvEx2.cpp.obj	beb302d2a01e1af
 2119	2245	7402429304316798	LectureNotes/Unit6-synchronization/unit6cvEx2.exe	e375a2ac8ae778d8
 10	288	7405323342674502	LectureNotes/Unit2-recap/CMakeFiles/unit2Ex3.dir/ex3.c.obj	20f6ec4458d53291
-289	656	7405323345466595	LectureNotes/Unit2-recap/unit2Ex3.exe	15b57bc2327bc850
+17	3694	7406791268565217	LectureNotes/Unit6-synchronization/CMakeFiles/PracticeCpp.dir/practice.cpp.obj	508ff0f2160555a8
+3695	4196	7406791305339346	LectureNotes/Unit6-synchronization/PracticeCpp.exe	36cb0c15d71510b7
+3046	3517	7406816751945536	Lab5/lab5q2.exe	607ffe90a3e8cbba
+16	1066	7406856504952287	LectureNotes/Unit6-synchronization/CMakeFiles/PracticeCpp.dir/practice.cpp.obj	508ff0f2160555a8
+18	923	7406857095037639	LectureNotes/Unit6-synchronization/CMakeFiles/PracticeCpp.dir/practice.cpp.obj	508ff0f2160555a8
+20	792	7406857233307685	LectureNotes/Unit6-synchronization/CMakeFiles/PracticeCpp.dir/practice.cpp.obj	508ff0f2160555a8
+793	908	7406857241038226	LectureNotes/Unit6-synchronization/PracticeCpp.exe	36cb0c15d71510b7
+16	858	7406857422762382	LectureNotes/Unit6-synchronization/CMakeFiles/PracticeCpp.dir/practice.cpp.obj	508ff0f2160555a8
+17	911	7406857814540273	LectureNotes/Unit6-synchronization/CMakeFiles/PracticeCpp.dir/practice.cpp.obj	508ff0f2160555a8
+912	1053	7406857823487956	LectureNotes/Unit6-synchronization/PracticeCpp.exe	36cb0c15d71510b7

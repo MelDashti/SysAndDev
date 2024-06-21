@@ -69,6 +69,133 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
+# Object build statements for EXECUTABLE target lab5q1
+
+
+#############################################
+# Order-only phony target for lab5q1
+
+build cmake_object_order_depends_target_lab5q1: phony || Lab5/CMakeFiles/lab5q1.dir
+
+build Lab5/CMakeFiles/lab5q1.dir/q2.cpp.obj: CXX_COMPILER__lab5q1_unscanned_Debug C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab5/q2.cpp || cmake_object_order_depends_target_lab5q1
+  DEP_FILE = Lab5\CMakeFiles\lab5q1.dir\q2.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = Lab5\CMakeFiles\lab5q1.dir
+  OBJECT_FILE_DIR = Lab5\CMakeFiles\lab5q1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab5q1
+
+
+#############################################
+# Link the executable Lab5\lab5q1.exe
+
+build Lab5/lab5q1.exe: CXX_EXECUTABLE_LINKER__lab5q1_Debug Lab5/CMakeFiles/lab5q1.dir/q2.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Lab5\CMakeFiles\lab5q1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Lab5\lab5q1.exe
+  TARGET_IMPLIB = Lab5\liblab5q1.dll.a
+  TARGET_PDB = lab5q1.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab5q2
+
+
+#############################################
+# Order-only phony target for lab5q2
+
+build cmake_object_order_depends_target_lab5q2: phony || Lab5/CMakeFiles/lab5q2.dir
+
+build Lab5/CMakeFiles/lab5q2.dir/q3.cpp.obj: CXX_COMPILER__lab5q2_unscanned_Debug C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab5/q3.cpp || cmake_object_order_depends_target_lab5q2
+  DEP_FILE = Lab5\CMakeFiles\lab5q2.dir\q3.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = Lab5\CMakeFiles\lab5q2.dir
+  OBJECT_FILE_DIR = Lab5\CMakeFiles\lab5q2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab5q2
+
+
+#############################################
+# Link the executable Lab5\lab5q2.exe
+
+build Lab5/lab5q2.exe: CXX_EXECUTABLE_LINKER__lab5q2_Debug Lab5/CMakeFiles/lab5q2.dir/q3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Lab5\CMakeFiles\lab5q2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Lab5\lab5q2.exe
+  TARGET_IMPLIB = Lab5\liblab5q2.dll.a
+  TARGET_PDB = lab5q2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab5q3
+
+
+#############################################
+# Order-only phony target for lab5q3
+
+build cmake_object_order_depends_target_lab5q3: phony || Lab5/CMakeFiles/lab5q3.dir
+
+build Lab5/CMakeFiles/lab5q3.dir/q4.cpp.obj: CXX_COMPILER__lab5q3_unscanned_Debug C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab5/q4.cpp || cmake_object_order_depends_target_lab5q3
+  DEP_FILE = Lab5\CMakeFiles\lab5q3.dir\q4.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = Lab5\CMakeFiles\lab5q3.dir
+  OBJECT_FILE_DIR = Lab5\CMakeFiles\lab5q3.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab5q3
+
+
+#############################################
+# Link the executable Lab5\lab5q3.exe
+
+build Lab5/lab5q3.exe: CXX_EXECUTABLE_LINKER__lab5q3_Debug Lab5/CMakeFiles/lab5q3.dir/q4.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Lab5\CMakeFiles\lab5q3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Lab5\lab5q3.exe
+  TARGET_IMPLIB = Lab5\liblab5q3.dll.a
+  TARGET_PDB = lab5q3.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Lab5/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\meela\Desktop\System And Device Programming\Practical\cmake-build-debug\Lab5" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Lab5/edit_cache: phony Lab5/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Lab5/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\meela\Desktop\System And Device Programming\Practical\cmake-build-debug\Lab5" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\meela\Desktop\System And Device Programming\Practical" -B"C:\Users\meela\Desktop\System And Device Programming\Practical\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Lab5/rebuild_cache: phony Lab5/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/meela/Desktop/System And Device Programming/Practical/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Exercise1
 
 
@@ -1982,6 +2109,18 @@ build lab: phony Lab1/lab.exe
 
 build lab.exe: phony Lab1/lab.exe
 
+build lab5q1: phony Lab5/lab5q1.exe
+
+build lab5q1.exe: phony Lab5/lab5q1.exe
+
+build lab5q2: phony Lab5/lab5q2.exe
+
+build lab5q2.exe: phony Lab5/lab5q2.exe
+
+build lab5q3: phony Lab5/lab5q3.exe
+
+build lab5q3.exe: phony Lab5/lab5q3.exe
+
 build multithreading: phony LectureNotes/Unit5-multithreading/multithreading.exe
 
 build multithreading.exe: phony LectureNotes/Unit5-multithreading/multithreading.exe
@@ -2110,7 +2249,7 @@ build untitled1.exe: phony Lab1/untitled1.exe
 #############################################
 # Folder: C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug
 
-build all: phony Lab3/all Lab2/all Lab1/all Lab4/all LectureNotes/all
+build all: phony Lab5/all Lab3/all Lab2/all Lab1/all Lab4/all LectureNotes/all
 
 # =============================================================================
 
@@ -2139,6 +2278,13 @@ build Lab3/all: phony Lab3/Exercise1.exe Lab3/Exercise2.exe Lab3/Exercise3.exe
 # Folder: C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/Lab4
 
 build Lab4/all: phony Lab4/q1.exe Lab4/q2.exe Lab4/q3.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/Lab5
+
+build Lab5/all: phony Lab5/lab5q1.exe Lab5/lab5q2.exe Lab5/lab5q3.exe
 
 # =============================================================================
 
@@ -2189,14 +2335,14 @@ build LectureNotes/Unit6-synchronization/all: phony LectureNotes/Unit6-synchroni
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab1/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab2/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab3/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab4/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit2-recap/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit3-cppBasics/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit4-cppLibrary/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit5-multithreading/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit6-synchronization/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab1/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab2/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab3/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab4/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab5/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit2-recap/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit3-cppBasics/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit4-cppLibrary/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit5-multithreading/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit6-synchronization/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab1/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab2/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab3/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab4/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit2-recap/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit3-cppBasics/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit4-cppLibrary/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit5-multithreading/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit6-synchronization/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab1/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab2/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab3/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab4/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab5/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit2-recap/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit3-cppBasics/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit4-cppLibrary/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit5-multithreading/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit6-synchronization/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
 
 
 #############################################

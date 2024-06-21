@@ -1,43 +1,59 @@
 #include <iostream>
-#include <mutex>
-#include <condition_variable>
-#include <semaphore>
+#include <string>
 
 using namespace std;
 
+class Foo {
+public:
+    string name;
+    int age;
 
-struct Semaphore {
-    int counter;
-    mutex t;
-    condition_variable cv;
+    // constructor
+    Foo() {
+        this->age = 22;
+        this->name = "Mel";
+    }
+
+    // copy constructor
+    Foo(const Foo &foo) {
+        this->age = foo.age;
+        this->name = foo.name;
+    }
+
+    // copy assignment operator
+    Foo &operator=(const Foo &foo) {
+        this->name = foo.name;
+        this->age = foo.age;
+        return *this;
+    }
+
+    // Move constructor
+    Foo(Foo &&foo);
+
+    // Move assigment
+    Foo& operator = (Foo&& f) noexcept {}
+
+
+    // ~ destructor
+    ~Foo() {
+
+    }
 };
 
-
-// increases the counter
-void release() {
-
-    t.lock();
-    while (counter) {
-
-    }
-
-
-}
-
-// here the semaphore decreases the counter
-void acquire() {
-
-    t.lock();
-    while (counter) {
-
-    }
-
-}
-
-
 int main() {
-    unique_lock<mutex> u_lock(mutex);
+    Foo foo;
+    cout << foo.name; // this is direct initialization
+
+    Foo foo1 = foo; // this copies the right handside to lefthandside
+
 
 
 }
+
+
+
+
+
+
+
 

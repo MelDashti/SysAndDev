@@ -16,12 +16,10 @@ bool is_prime(int n) {
     return false;
 }
 
-
 int sum(int a, int b) {
     this_thread::sleep_for(chrono::seconds(2));
     return a + b;
 };
-
 
 int main() {
     auto f1 = async(launch::async, my_f,
@@ -99,6 +97,76 @@ int main() {
 
 
     return 0;
+}
+
+#include <iostream>
+#include <mutex>
+#include <condition_variable>
+#include <semaphore>
+#include <future>
+#include <vector>
+#include <thread>
+
+using namespace std;
+
+int func(promise<bool> pr, int b, int c) {
+    this_thread::sleep_for(::chrono::seconds(2));
+    if (b > c) {
+        pr.set_value(false);
+    } else pr.set_value(true);
+}
+
+// the & should be used cuz
+int funcc(future<bool> &f, int b) {
+    int c = f.get();
+    if (b > c) {
+        return false;
+    } else return true;
+}
+
+int setP(promise<int> p) {
+    int res = 18;
+    p.set_value(res);
+}
+
+int getF(future<int> f) {
+    int res = f.get();
+    return res;
+}
+
+
+int main() {
+    promise<int> p;
+    future<int> f = p.get_future();
+    // the first one sets the value of the promise
+    auto fu1 = async(setP, ::move(p));
+    // the second one gets the value of the future
+    auto fu2 = async(getF, ::move(f));
+
+    int x = fu2.get();
+    return 0;
+}
+
+
+int main3() {
+    promise<bool> p;
+    future<bool> f2 = p.get_future();
+    auto f3 = async(::launch::async, funcc, ref(f2), 3);
+    p.set_value(2);
+    int x = f3.get();
+    cout << x;
+
+}
+
+
+int main2() {
+
+    promise<bool> p;
+    auto f = p.get_future();
+    auto t = thread(func, ::move(p), 5, 4);
+    cout << "waiting for promise value to be fetched" << endl;
+    cout << f.get();
+    t.join();
 }
 
 
