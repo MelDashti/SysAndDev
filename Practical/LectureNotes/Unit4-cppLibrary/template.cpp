@@ -8,10 +8,12 @@
 
 using namespace std;
 
+
 // C++ templates are used to make functions and classes independent of data types, supporting
 // generic programming. If we use templates we can write more general classes and functions that accept
 // any type of data. At compile-time, the compiler produces the needed version of the functions and classes
 // depending on the parameters used for calling them. We need to define a template before defining a function/class using that template.
+
 
 // for functions
 template<typename T>
@@ -35,6 +37,7 @@ template<typename T, typename R>
 void print(T first, R second) {
     cout << first << second;
 }
+
 
 int main() {
 // When we call such functions and classes from the main, for functions we can omit

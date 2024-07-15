@@ -32,13 +32,16 @@ C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit2-recap/CMakeFiles/unit2Ex1.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit2-recap/CMakeFiles/unit2Ex2.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit2-recap/CMakeFiles/unit2Ex3.dir
+C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit2-recap/CMakeFiles/unit2Practice.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit2-recap/CMakeFiles/edit_cache.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit2-recap/CMakeFiles/rebuild_cache.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit3-cppBasics/CMakeFiles/cppBasics.dir
+C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit3-cppBasics/CMakeFiles/cppBasicsPr.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit3-cppBasics/CMakeFiles/edit_cache.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit3-cppBasics/CMakeFiles/rebuild_cache.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit4-cppLibrary/CMakeFiles/cppLib.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit4-cppLibrary/CMakeFiles/cppLibEx.dir
+C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit4-cppLibrary/CMakeFiles/cppLibIO.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit4-cppLibrary/CMakeFiles/edit_cache.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit4-cppLibrary/CMakeFiles/rebuild_cache.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit5-multithreading/CMakeFiles/multithreading.dir
@@ -58,6 +61,7 @@ C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit6-synchronization/CMakeFiles/unit6ex4.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit6-synchronization/CMakeFiles/unit6ex4c.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit6-synchronization/CMakeFiles/unit6ex5.dir
+C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit6-synchronization/CMakeFiles/unit6exercise6.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit6-synchronization/CMakeFiles/unit6ex6.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit6-synchronization/CMakeFiles/unit6ex7.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit6-synchronization/CMakeFiles/unit6cvEx1.dir
@@ -71,3 +75,6 @@ C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit6-synchronization/CMakeFiles/unit6Prac2.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit6-synchronization/CMakeFiles/edit_cache.dir
 C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit6-synchronization/CMakeFiles/rebuild_cache.dir
+C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/PastExams/CMakeFiles/exam.dir
+C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/PastExams/CMakeFiles/edit_cache.dir
+C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/PastExams/CMakeFiles/rebuild_cache.dir

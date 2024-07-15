@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "LectureNotes/Unit6-synchronization/unit6ex6.exe"
+			"path" : "LectureNotes/Unit4-cppLibrary/cppLibIO.exe"
 		},
 		{
-			"path" : "LectureNotes/Unit6-synchronization/unit6ex6.pdb"
+			"path" : "LectureNotes/Unit4-cppLibrary/cppLibIO.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -17,7 +17,7 @@
 		],
 		"files" : 
 		[
-			"LectureNotes/Unit6-synchronization/CMakeLists.txt"
+			"LectureNotes/Unit4-cppLibrary/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 13,
+				"line" : 3,
 				"parent" : 0
 			}
 		]
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "unit6ex6::@eff2a79dfc714ef48407",
+	"id" : "cppLibIO::@e1db087ccead488d3da1",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,12 +76,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "unit6ex6",
-	"nameOnDisk" : "unit6ex6.exe",
+	"name" : "cppLibIO",
+	"nameOnDisk" : "cppLibIO.exe",
 	"paths" : 
 	{
-		"build" : "LectureNotes/Unit6-synchronization",
-		"source" : "LectureNotes/Unit6-synchronization"
+		"build" : "LectureNotes/Unit4-cppLibrary",
+		"source" : "LectureNotes/Unit4-cppLibrary"
 	},
 	"sourceGroups" : 
 	[
@@ -98,7 +98,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "LectureNotes/Unit6-synchronization/notesCV.cpp",
+			"path" : "LectureNotes/Unit4-cppLibrary/ioPractice.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

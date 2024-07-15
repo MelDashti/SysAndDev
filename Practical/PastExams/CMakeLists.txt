@@ -1,0 +1,1 @@
+add_executable(exam examQ1.cpp)

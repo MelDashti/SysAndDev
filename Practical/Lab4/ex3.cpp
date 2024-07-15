@@ -79,3 +79,14 @@ int main() {
     cout << endl << "{11}";
     return 0;
 }
+//{01} [C]
+//{02} [C] [C] [C] [C] [C]
+//{03} [C] [CC] (not called here but in the end i guess [D])
+//{04} [C]
+//{05} [C] [C] [C] [C] [C] [C] [C] [C] [C] [C]
+//{06} [CC]
+//{07} [MC]
+//{08} [C]
+//{09} [MAO]
+//{10} [nothing cuz passed by ref] in func[C] [CAO][CAO][CAO] [D] (Destructor called for temp when returned])
+//{11} [D] [D] [D] [D] [D] [D] [D] [D] [D] [D]

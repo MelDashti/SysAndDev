@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "LectureNotes/Unit6-synchronization/unit6cvEx2.exe"
+			"path" : "LectureNotes/Unit6-synchronization/unit6exercise6.exe"
 		},
 		{
-			"path" : "LectureNotes/Unit6-synchronization/unit6cvEx2.pdb"
+			"path" : "LectureNotes/Unit6-synchronization/unit6exercise6.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 16,
+				"line" : 13,
 				"parent" : 0
 			}
 		]
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "unit6cvEx2::@eff2a79dfc714ef48407",
+	"id" : "unit6exercise6::@eff2a79dfc714ef48407",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +76,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "unit6cvEx2",
-	"nameOnDisk" : "unit6cvEx2.exe",
+	"name" : "unit6exercise6",
+	"nameOnDisk" : "unit6exercise6.exe",
 	"paths" : 
 	{
 		"build" : "LectureNotes/Unit6-synchronization",
@@ -98,7 +98,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "LectureNotes/Unit6-synchronization/cvEx2.cpp",
+			"path" : "LectureNotes/Unit6-synchronization/ex6.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

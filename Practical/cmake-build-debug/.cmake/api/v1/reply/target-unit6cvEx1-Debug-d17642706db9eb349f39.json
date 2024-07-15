@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "LectureNotes/Unit6-synchronization/unit6ex7.exe"
+			"path" : "LectureNotes/Unit6-synchronization/unit6cvEx1.exe"
 		},
 		{
-			"path" : "LectureNotes/Unit6-synchronization/unit6ex7.pdb"
+			"path" : "LectureNotes/Unit6-synchronization/unit6cvEx1.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 14,
+				"line" : 16,
 				"parent" : 0
 			}
 		]
@@ -38,17 +38,25 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fdiagnostics-color=always"
+					"fragment" : "-g -std=gnu++20 -fdiagnostics-color=always"
 				}
 			],
-			"language" : "C",
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
 			"sourceIndexes" : 
 			[
 				0
 			]
 		}
 	],
-	"id" : "unit6ex7::@eff2a79dfc714ef48407",
+	"id" : "unit6cvEx1::@eff2a79dfc714ef48407",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -66,10 +74,10 @@
 				"role" : "libraries"
 			}
 		],
-		"language" : "C"
+		"language" : "CXX"
 	},
-	"name" : "unit6ex7",
-	"nameOnDisk" : "unit6ex7.exe",
+	"name" : "unit6cvEx1",
+	"nameOnDisk" : "unit6cvEx1.exe",
 	"paths" : 
 	{
 		"build" : "LectureNotes/Unit6-synchronization",
@@ -90,7 +98,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "LectureNotes/Unit6-synchronization/notesCV.c",
+			"path" : "LectureNotes/Unit6-synchronization/cvEx1.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

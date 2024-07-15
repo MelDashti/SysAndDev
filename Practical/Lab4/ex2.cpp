@@ -45,6 +45,14 @@ int main(){
 
     // 07. Describe the differences between std::unique_ptr, std::shared_ptr,
     //    and std::weak_ptr.
+    // my ans: unique,shared and weak pointer are three different pointers used for dynamic memory allocation they avoid memory leaks and dangling pointers.
+    //Unique pointer is used to allocate memory efficiently to a single variable or array, no other variable can use from this pointer or assign it to another value.
+    //For example: unique_ptr<int> a(new int(3));
+    //unique_ptr<int> b = a; // this will give an error because unique pointer is designed to maintain an exclusive ownership on the object.
+    //Shared pointer on the hand, can be used by other variables and the ownership is not exclusive.
+    //shared_ptr<int> p1 = make_shared<int>(3);
+    //shared_ptr<int> p2 = p1; // this will not generate an error as they can be shared
+    //Finally, we have weak_ptr which doens't update it's count when a pointer is shared with another, this change in structure help avoid error circular loops in reference.
     // Official Ans: std::unique_ptr provides exclusive ownership of dynamically allocated memory and is non-copyable;
     // std::shared_ptr allows multiple pointers to share ownership of the same dynamically allocated memory .
     // std::weak_ptr is used in conjunction with std::shared_ptr to break circular references and prevent memory leaks.

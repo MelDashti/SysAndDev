@@ -44,10 +44,6 @@ void adder() {
     }
 }
 
-
-
-
-
 // in the below code its not creating three threads so again the revised version is above.
 
 //mutex m;

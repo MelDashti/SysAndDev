@@ -1,59 +1,41 @@
 #include <iostream>
-#include <string>
+#include <semaphore>
+#include <mutex>
+#include <unistd.h>
+#include <condition_variable>
 
 using namespace std;
 
-class Foo {
-public:
-    string name;
-    int age;
+mutex m;
+condition_variable cv;
 
-    // constructor
-    Foo() {
-        this->age = 22;
-        this->name = "Mel";
+void atomNa() {
+    unique_lock<mutex> sl(m);
+    while (1) {
+        this_thread::sleep_for(chrono::seconds(5));
+        cout << "created Na atom";
     }
+}
 
-    // copy constructor
-    Foo(const Foo &foo) {
-        this->age = foo.age;
-        this->name = foo.name;
+void atomCL() {
+    unique_lock<mutex> cl(m);
+    while (1) {
+        this_thread::sleep_for(chrono::seconds(5));
+        cout << "created CL atom";
     }
+}
 
-    // copy assignment operator
-    Foo &operator=(const Foo &foo) {
-        this->name = foo.name;
-        this->age = foo.age;
-        return *this;
+void atomNacl() {
+    unique_lock<mutex> ul(m);
+    while (!(Na && Cl)) {
+        cv.wait(ul);
+        cout << "created Nacl atom";
     }
-
-    // Move constructor
-    Foo(Foo &&foo);
-
-    // Move assigment
-    Foo& operator = (Foo&& f) noexcept {}
-
-
-    // ~ destructor
-    ~Foo() {
-
-    }
-};
-
-int main() {
-    Foo foo;
-    cout << foo.name; // this is direct initialization
-
-    Foo foo1 = foo; // this copies the right handside to lefthandside
-
 
 
 }
 
+int main() {
 
 
-
-
-
-
-
+}

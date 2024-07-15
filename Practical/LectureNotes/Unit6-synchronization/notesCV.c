@@ -57,17 +57,25 @@ int main() {
 }
 // Understanding pthread_cond_wait:
 // 1. Lock the Mutex:
-//Before calling pthread_cond_wait, the thread must lock a mutex. This mutex is typically used to protect a shared resource or condition (like the ready variable in our example).
+//Before calling pthread_cond_wait, the thread must lock a mutex. This mutex is typically used to protect a shared
+// resource or condition (like the ready variable in our example).
 //2. Call pthread_cond_wait:
 //When pthread_cond_wait is called, it atomically:
-//Unlocks the Mutex: This is done to allow other threads to acquire the mutex and modify the shared resource or condition. The unlocking happens atomically with the thread being placed on the condition variable's wait queue. This atomic operation is crucial because it prevents a race condition between unlocking the mutex and entering the waiting state.
-//Enters the Waiting State: The thread is placed into a waiting state where it will remain until it is specifically notified (via pthread_cond_signal or pthread_cond_broadcast), or until a spurious wakeup occurs.
+//Unlocks the Mutex: This is done to allow other threads to acquire the mutex and modify the shared resource or
+// condition. The unlocking happens atomically with the thread being placed on the condition variable's wait queue.
+// This atomic operation is crucial because it prevents a race condition between unlocking the mutex and entering the
+// waiting state.
+//Enters the Waiting State: The thread is placed into a waiting state where it will remain until it is specifically
+// notified (via pthread_cond_signal or pthread_cond_broadcast), or until a spurious wakeup occurs.
 //3. Woken Up:
 //When the condition variable is signaled (using pthread_cond_signal or pthread_cond_broadcast), the waiting thread is awakened. However, before it can proceed with its execution, it must re-acquire the mutex it released when it entered pthread_cond_wait. This re-acquisition is automatic and handled internally by pthread_cond_wait.
 //4. Mutex is Re-locked:
-//The thread will not exit the pthread_cond_wait function until it successfully re-acquires the mutex. This ensures that when the thread resumes execution after waiting, it holds the mutex, just as it did when it initially called pthread_cond_wait.
+//The thread will not exit the pthread_cond_wait function until it successfully re-acquires the mutex.
+// This ensures that when the thread resumes execution after waiting, it holds the mutex, just as it did when
+// it initially called pthread_cond_wait.
 //5. Proceed with Execution:
-//Once the mutex is re-acquired, the thread can safely check the condition and proceed with its execution, knowing that it has exclusive access to the shared resources protected by the mutex.
+//Once the mutex is re-acquired, the thread can safely check the condition and proceed with its execution,
+// knowing that it has exclusive access to the shared resources protected by the mutex.
 
 
 //#include <stdio.h>

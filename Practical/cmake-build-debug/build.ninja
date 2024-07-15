@@ -914,6 +914,39 @@ build LectureNotes/Unit2-recap/unit2Ex3.exe: C_EXECUTABLE_LINKER__unit2Ex3_Debug
   TARGET_IMPLIB = LectureNotes\Unit2-recap\libunit2Ex3.dll.a
   TARGET_PDB = unit2Ex3.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target unit2Practice
+
+
+#############################################
+# Order-only phony target for unit2Practice
+
+build cmake_object_order_depends_target_unit2Practice: phony || LectureNotes/Unit2-recap/CMakeFiles/unit2Practice.dir
+
+build LectureNotes/Unit2-recap/CMakeFiles/unit2Practice.dir/practice.cpp.obj: CXX_COMPILER__unit2Practice_unscanned_Debug C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit2-recap/practice.cpp || cmake_object_order_depends_target_unit2Practice
+  DEP_FILE = LectureNotes\Unit2-recap\CMakeFiles\unit2Practice.dir\practice.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = LectureNotes\Unit2-recap\CMakeFiles\unit2Practice.dir
+  OBJECT_FILE_DIR = LectureNotes\Unit2-recap\CMakeFiles\unit2Practice.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unit2Practice
+
+
+#############################################
+# Link the executable LectureNotes\Unit2-recap\unit2Practice.exe
+
+build LectureNotes/Unit2-recap/unit2Practice.exe: CXX_EXECUTABLE_LINKER__unit2Practice_Debug LectureNotes/Unit2-recap/CMakeFiles/unit2Practice.dir/practice.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = LectureNotes\Unit2-recap\CMakeFiles\unit2Practice.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LectureNotes\Unit2-recap\unit2Practice.exe
+  TARGET_IMPLIB = LectureNotes\Unit2-recap\libunit2Practice.dll.a
+  TARGET_PDB = unit2Practice.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -974,6 +1007,39 @@ build LectureNotes/Unit3-cppBasics/cppBasics.exe: CXX_EXECUTABLE_LINKER__cppBasi
   TARGET_FILE = LectureNotes\Unit3-cppBasics\cppBasics.exe
   TARGET_IMPLIB = LectureNotes\Unit3-cppBasics\libcppBasics.dll.a
   TARGET_PDB = cppBasics.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target cppBasicsPr
+
+
+#############################################
+# Order-only phony target for cppBasicsPr
+
+build cmake_object_order_depends_target_cppBasicsPr: phony || LectureNotes/Unit3-cppBasics/CMakeFiles/cppBasicsPr.dir
+
+build LectureNotes/Unit3-cppBasics/CMakeFiles/cppBasicsPr.dir/practice.cpp.obj: CXX_COMPILER__cppBasicsPr_unscanned_Debug C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit3-cppBasics/practice.cpp || cmake_object_order_depends_target_cppBasicsPr
+  DEP_FILE = LectureNotes\Unit3-cppBasics\CMakeFiles\cppBasicsPr.dir\practice.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = LectureNotes\Unit3-cppBasics\CMakeFiles\cppBasicsPr.dir
+  OBJECT_FILE_DIR = LectureNotes\Unit3-cppBasics\CMakeFiles\cppBasicsPr.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cppBasicsPr
+
+
+#############################################
+# Link the executable LectureNotes\Unit3-cppBasics\cppBasicsPr.exe
+
+build LectureNotes/Unit3-cppBasics/cppBasicsPr.exe: CXX_EXECUTABLE_LINKER__cppBasicsPr_Debug LectureNotes/Unit3-cppBasics/CMakeFiles/cppBasicsPr.dir/practice.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = LectureNotes\Unit3-cppBasics\CMakeFiles\cppBasicsPr.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LectureNotes\Unit3-cppBasics\cppBasicsPr.exe
+  TARGET_IMPLIB = LectureNotes\Unit3-cppBasics\libcppBasicsPr.dll.a
+  TARGET_PDB = cppBasicsPr.exe.dbg
 
 
 #############################################
@@ -1092,6 +1158,39 @@ build LectureNotes/Unit4-cppLibrary/cppLibEx.exe: CXX_EXECUTABLE_LINKER__cppLibE
   TARGET_FILE = LectureNotes\Unit4-cppLibrary\cppLibEx.exe
   TARGET_IMPLIB = LectureNotes\Unit4-cppLibrary\libcppLibEx.dll.a
   TARGET_PDB = cppLibEx.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target cppLibIO
+
+
+#############################################
+# Order-only phony target for cppLibIO
+
+build cmake_object_order_depends_target_cppLibIO: phony || LectureNotes/Unit4-cppLibrary/CMakeFiles/cppLibIO.dir
+
+build LectureNotes/Unit4-cppLibrary/CMakeFiles/cppLibIO.dir/ioPractice.cpp.obj: CXX_COMPILER__cppLibIO_unscanned_Debug C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit4-cppLibrary/ioPractice.cpp || cmake_object_order_depends_target_cppLibIO
+  DEP_FILE = LectureNotes\Unit4-cppLibrary\CMakeFiles\cppLibIO.dir\ioPractice.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = LectureNotes\Unit4-cppLibrary\CMakeFiles\cppLibIO.dir
+  OBJECT_FILE_DIR = LectureNotes\Unit4-cppLibrary\CMakeFiles\cppLibIO.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cppLibIO
+
+
+#############################################
+# Link the executable LectureNotes\Unit4-cppLibrary\cppLibIO.exe
+
+build LectureNotes/Unit4-cppLibrary/cppLibIO.exe: CXX_EXECUTABLE_LINKER__cppLibIO_Debug LectureNotes/Unit4-cppLibrary/CMakeFiles/cppLibIO.dir/ioPractice.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = LectureNotes\Unit4-cppLibrary\CMakeFiles\cppLibIO.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LectureNotes\Unit4-cppLibrary\cppLibIO.exe
+  TARGET_IMPLIB = LectureNotes\Unit4-cppLibrary\libcppLibIO.dll.a
+  TARGET_PDB = cppLibIO.exe.dbg
 
 
 #############################################
@@ -1657,6 +1756,39 @@ build LectureNotes/Unit6-synchronization/unit6ex5.exe: CXX_EXECUTABLE_LINKER__un
   TARGET_PDB = unit6ex5.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target unit6exercise6
+
+
+#############################################
+# Order-only phony target for unit6exercise6
+
+build cmake_object_order_depends_target_unit6exercise6: phony || LectureNotes/Unit6-synchronization/CMakeFiles/unit6exercise6.dir
+
+build LectureNotes/Unit6-synchronization/CMakeFiles/unit6exercise6.dir/ex6.cpp.obj: CXX_COMPILER__unit6exercise6_unscanned_Debug C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit6-synchronization/ex6.cpp || cmake_object_order_depends_target_unit6exercise6
+  DEP_FILE = LectureNotes\Unit6-synchronization\CMakeFiles\unit6exercise6.dir\ex6.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = LectureNotes\Unit6-synchronization\CMakeFiles\unit6exercise6.dir
+  OBJECT_FILE_DIR = LectureNotes\Unit6-synchronization\CMakeFiles\unit6exercise6.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unit6exercise6
+
+
+#############################################
+# Link the executable LectureNotes\Unit6-synchronization\unit6exercise6.exe
+
+build LectureNotes/Unit6-synchronization/unit6exercise6.exe: CXX_EXECUTABLE_LINKER__unit6exercise6_Debug LectureNotes/Unit6-synchronization/CMakeFiles/unit6exercise6.dir/ex6.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = LectureNotes\Unit6-synchronization\CMakeFiles\unit6exercise6.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LectureNotes\Unit6-synchronization\unit6exercise6.exe
+  TARGET_IMPLIB = LectureNotes\Unit6-synchronization\libunit6exercise6.dll.a
+  TARGET_PDB = unit6exercise6.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target unit6ex6
 
 
@@ -2043,6 +2175,67 @@ build LectureNotes/Unit6-synchronization/CMakeFiles/rebuild_cache.util: CUSTOM_C
 build LectureNotes/Unit6-synchronization/rebuild_cache: phony LectureNotes/Unit6-synchronization/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/meela/Desktop/System And Device Programming/Practical/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target exam
+
+
+#############################################
+# Order-only phony target for exam
+
+build cmake_object_order_depends_target_exam: phony || PastExams/CMakeFiles/exam.dir
+
+build PastExams/CMakeFiles/exam.dir/examQ1.cpp.obj: CXX_COMPILER__exam_unscanned_Debug C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/PastExams/examQ1.cpp || cmake_object_order_depends_target_exam
+  DEP_FILE = PastExams\CMakeFiles\exam.dir\examQ1.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = PastExams\CMakeFiles\exam.dir
+  OBJECT_FILE_DIR = PastExams\CMakeFiles\exam.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target exam
+
+
+#############################################
+# Link the executable PastExams\exam.exe
+
+build PastExams/exam.exe: CXX_EXECUTABLE_LINKER__exam_Debug PastExams/CMakeFiles/exam.dir/examQ1.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = PastExams\CMakeFiles\exam.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = PastExams\exam.exe
+  TARGET_IMPLIB = PastExams\libexam.dll.a
+  TARGET_PDB = exam.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build PastExams/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\meela\Desktop\System And Device Programming\Practical\cmake-build-debug\PastExams" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build PastExams/edit_cache: phony PastExams/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build PastExams/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\meela\Desktop\System And Device Programming\Practical\cmake-build-debug\PastExams" && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\meela\Desktop\System And Device Programming\Practical" -B"C:\Users\meela\Desktop\System And Device Programming\Practical\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build PastExams/rebuild_cache: phony PastExams/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build Exercise: phony LectureNotes/Unit6-synchronization/Exercise.exe
@@ -2073,6 +2266,10 @@ build cppBasics: phony LectureNotes/Unit3-cppBasics/cppBasics.exe
 
 build cppBasics.exe: phony LectureNotes/Unit3-cppBasics/cppBasics.exe
 
+build cppBasicsPr: phony LectureNotes/Unit3-cppBasics/cppBasicsPr.exe
+
+build cppBasicsPr.exe: phony LectureNotes/Unit3-cppBasics/cppBasicsPr.exe
+
 build cppLib: phony LectureNotes/Unit4-cppLibrary/cppLib.exe
 
 build cppLib.exe: phony LectureNotes/Unit4-cppLibrary/cppLib.exe
@@ -2080,6 +2277,10 @@ build cppLib.exe: phony LectureNotes/Unit4-cppLibrary/cppLib.exe
 build cppLibEx: phony LectureNotes/Unit4-cppLibrary/cppLibEx.exe
 
 build cppLibEx.exe: phony LectureNotes/Unit4-cppLibrary/cppLibEx.exe
+
+build cppLibIO: phony LectureNotes/Unit4-cppLibrary/cppLibIO.exe
+
+build cppLibIO.exe: phony LectureNotes/Unit4-cppLibrary/cppLibIO.exe
 
 build ex1: phony Lab2/ex1.exe
 
@@ -2096,6 +2297,10 @@ build ex3.exe: phony Lab2/ex3.exe
 build ex4: phony Lab2/ex4.exe
 
 build ex4.exe: phony Lab2/ex4.exe
+
+build exam: phony PastExams/exam.exe
+
+build exam.exe: phony PastExams/exam.exe
 
 build exerciseMultithreading: phony LectureNotes/Unit5-multithreading/exerciseMultithreading.exe
 
@@ -2152,6 +2357,10 @@ build unit2Ex2.exe: phony LectureNotes/Unit2-recap/unit2Ex2.exe
 build unit2Ex3: phony LectureNotes/Unit2-recap/unit2Ex3.exe
 
 build unit2Ex3.exe: phony LectureNotes/Unit2-recap/unit2Ex3.exe
+
+build unit2Practice: phony LectureNotes/Unit2-recap/unit2Practice.exe
+
+build unit2Practice.exe: phony LectureNotes/Unit2-recap/unit2Practice.exe
 
 build unit6: phony LectureNotes/Unit6-synchronization/unit6.exe
 
@@ -2217,6 +2426,10 @@ build unit6ex7: phony LectureNotes/Unit6-synchronization/unit6ex7.exe
 
 build unit6ex7.exe: phony LectureNotes/Unit6-synchronization/unit6ex7.exe
 
+build unit6exercise6: phony LectureNotes/Unit6-synchronization/unit6exercise6.exe
+
+build unit6exercise6.exe: phony LectureNotes/Unit6-synchronization/unit6exercise6.exe
+
 build unit6o2: phony LectureNotes/Unit6-synchronization/unit6o2.exe
 
 build unit6o2.exe: phony LectureNotes/Unit6-synchronization/unit6o2.exe
@@ -2249,7 +2462,7 @@ build untitled1.exe: phony Lab1/untitled1.exe
 #############################################
 # Folder: C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug
 
-build all: phony Lab5/all Lab3/all Lab2/all Lab1/all Lab4/all LectureNotes/all
+build all: phony Lab5/all Lab3/all Lab2/all Lab1/all Lab4/all LectureNotes/all PastExams/all
 
 # =============================================================================
 
@@ -2298,21 +2511,21 @@ build LectureNotes/all: phony LectureNotes/Unit2-recap/all LectureNotes/Unit3-cp
 #############################################
 # Folder: C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit2-recap
 
-build LectureNotes/Unit2-recap/all: phony LectureNotes/Unit2-recap/unit2Ex1.exe LectureNotes/Unit2-recap/unit2Ex2.exe LectureNotes/Unit2-recap/unit2Ex3.exe
+build LectureNotes/Unit2-recap/all: phony LectureNotes/Unit2-recap/unit2Ex1.exe LectureNotes/Unit2-recap/unit2Ex2.exe LectureNotes/Unit2-recap/unit2Ex3.exe LectureNotes/Unit2-recap/unit2Practice.exe
 
 # =============================================================================
 
 #############################################
 # Folder: C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit3-cppBasics
 
-build LectureNotes/Unit3-cppBasics/all: phony LectureNotes/Unit3-cppBasics/cppBasics.exe
+build LectureNotes/Unit3-cppBasics/all: phony LectureNotes/Unit3-cppBasics/cppBasics.exe LectureNotes/Unit3-cppBasics/cppBasicsPr.exe
 
 # =============================================================================
 
 #############################################
 # Folder: C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit4-cppLibrary
 
-build LectureNotes/Unit4-cppLibrary/all: phony LectureNotes/Unit4-cppLibrary/cppLib.exe LectureNotes/Unit4-cppLibrary/cppLibEx.exe
+build LectureNotes/Unit4-cppLibrary/all: phony LectureNotes/Unit4-cppLibrary/cppLib.exe LectureNotes/Unit4-cppLibrary/cppLibEx.exe LectureNotes/Unit4-cppLibrary/cppLibIO.exe
 
 # =============================================================================
 
@@ -2326,7 +2539,14 @@ build LectureNotes/Unit5-multithreading/all: phony LectureNotes/Unit5-multithrea
 #############################################
 # Folder: C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/LectureNotes/Unit6-synchronization
 
-build LectureNotes/Unit6-synchronization/all: phony LectureNotes/Unit6-synchronization/unit6.exe LectureNotes/Unit6-synchronization/unit6o2.exe LectureNotes/Unit6-synchronization/unit6o3.exe LectureNotes/Unit6-synchronization/Exercise.exe LectureNotes/Unit6-synchronization/PracticeCpp.exe LectureNotes/Unit6-synchronization/Practice.exe LectureNotes/Unit6-synchronization/unit6ex2.exe LectureNotes/Unit6-synchronization/unit6ex2c.exe LectureNotes/Unit6-synchronization/unit6ex3.exe LectureNotes/Unit6-synchronization/unit6ex4.exe LectureNotes/Unit6-synchronization/unit6ex4c.exe LectureNotes/Unit6-synchronization/unit6ex5.exe LectureNotes/Unit6-synchronization/unit6ex6.exe LectureNotes/Unit6-synchronization/unit6ex7.exe LectureNotes/Unit6-synchronization/unit6cvEx1.exe LectureNotes/Unit6-synchronization/unit6cvEx2.exe LectureNotes/Unit6-synchronization/unit6cvEx3.exe LectureNotes/Unit6-synchronization/unit6tp.exe LectureNotes/Unit6-synchronization/unti6cppTask.exe LectureNotes/Unit6-synchronization/unit6barrierEx1.exe LectureNotes/Unit6-synchronization/unit6barrierNotes.exe LectureNotes/Unit6-synchronization/unit6Prac1.exe LectureNotes/Unit6-synchronization/unit6Prac2.exe
+build LectureNotes/Unit6-synchronization/all: phony LectureNotes/Unit6-synchronization/unit6.exe LectureNotes/Unit6-synchronization/unit6o2.exe LectureNotes/Unit6-synchronization/unit6o3.exe LectureNotes/Unit6-synchronization/Exercise.exe LectureNotes/Unit6-synchronization/PracticeCpp.exe LectureNotes/Unit6-synchronization/Practice.exe LectureNotes/Unit6-synchronization/unit6ex2.exe LectureNotes/Unit6-synchronization/unit6ex2c.exe LectureNotes/Unit6-synchronization/unit6ex3.exe LectureNotes/Unit6-synchronization/unit6ex4.exe LectureNotes/Unit6-synchronization/unit6ex4c.exe LectureNotes/Unit6-synchronization/unit6ex5.exe LectureNotes/Unit6-synchronization/unit6exercise6.exe LectureNotes/Unit6-synchronization/unit6ex6.exe LectureNotes/Unit6-synchronization/unit6ex7.exe LectureNotes/Unit6-synchronization/unit6cvEx1.exe LectureNotes/Unit6-synchronization/unit6cvEx2.exe LectureNotes/Unit6-synchronization/unit6cvEx3.exe LectureNotes/Unit6-synchronization/unit6tp.exe LectureNotes/Unit6-synchronization/unti6cppTask.exe LectureNotes/Unit6-synchronization/unit6barrierEx1.exe LectureNotes/Unit6-synchronization/unit6barrierNotes.exe LectureNotes/Unit6-synchronization/unit6Prac1.exe LectureNotes/Unit6-synchronization/unit6Prac2.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/meela/Desktop/System And Device Programming/Practical/cmake-build-debug/PastExams
+
+build PastExams/all: phony PastExams/exam.exe
 
 # =============================================================================
 # Built-in targets
@@ -2335,14 +2555,14 @@ build LectureNotes/Unit6-synchronization/all: phony LectureNotes/Unit6-synchroni
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab1/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab2/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab3/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab4/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab5/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit2-recap/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit3-cppBasics/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit4-cppLibrary/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit5-multithreading/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit6-synchronization/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab1/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab2/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab3/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab4/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab5/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit2-recap/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit3-cppBasics/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit4-cppLibrary/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit5-multithreading/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit6-synchronization/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/PastExams/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab1/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab2/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab3/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab4/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab5/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit2-recap/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit3-cppBasics/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit4-cppLibrary/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit5-multithreading/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit6-synchronization/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab1/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab2/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab3/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab4/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/Lab5/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit2-recap/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit3-cppBasics/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit4-cppLibrary/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit5-multithreading/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/LectureNotes/Unit6-synchronization/CMakeLists.txt C$:/Users/meela/Desktop/System$ And$ Device$ Programming/Practical/PastExams/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
 
 
 #############################################
